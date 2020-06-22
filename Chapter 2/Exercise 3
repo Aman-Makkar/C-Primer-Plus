@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int years, days;
+
+	years = 31;
+	days = 365 * years;
+
+	printf("My age in years is %d and in days it is %d.\n", years, days);
+
+	return 0;
+}
