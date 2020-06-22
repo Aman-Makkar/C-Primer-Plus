@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main(void)
+{
+	float inch, cm, total;
+
+	cm = 2.54;
+
+	printf("Enter a value for inch you want to convert to cm\n");
+	scanf("%f", &inch);
+	total = inch * cm;
+
+	printf("%f inch(es) is %fcm\n", inch, total);
+
+	return 0;
+}
