@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main (void)
+{
+	printf("Name: Aman Makkar\n");
+	printf("Address: Hidden for obvious reasons\n");
+
+	return 0;
+}
