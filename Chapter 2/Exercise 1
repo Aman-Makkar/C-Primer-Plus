@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main (void)
+{
+	printf("Aman Makkar\n");
+	printf("Aman\nMakkar\n");
+	printf("Aman");
+	printf(" Makkar\n");
+
+	return 0;
+}
