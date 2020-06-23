@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main (void)
+{
+	int lower, upper, integer;
+
+	printf("Enter the lower limit integer: ");
+	scanf("%d", &lower);
+	printf("Enter the upper limit integer: ");
+	scanf("%d", &upper);
+
+	printf("%5s %10s %15s\n", "integer", "square", "cube");
+	for (integer = lower; integer <= upper; integer++)
+		printf("%5d %10d %15d\n", integer, integer * integer, integer * integer * integer);
+
+	return 0;
+}
