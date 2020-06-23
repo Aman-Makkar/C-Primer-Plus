@@ -1,0 +1,21 @@
+#include <stdio.h>
+void cubed(double n);
+
+int main (void)
+{	
+	double m;
+
+	printf("Enter a double number: ");
+	scanf("%lf", &m);
+	cubed(m);
+
+	return 0;
+}
+
+void cubed(double n)
+{
+
+	n = n* n * n;
+
+	printf("%.3lf\n", n);
+}
