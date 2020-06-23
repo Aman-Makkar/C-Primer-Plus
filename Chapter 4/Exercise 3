@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main (void)
+{
+	float num;
+
+	printf("Enter a floating point number: ");
+	scanf("%f", &num);
+	printf("As a decimal it is %f and as an exponential it is %e.\n", num, num);
+
+	return 0;
+}
