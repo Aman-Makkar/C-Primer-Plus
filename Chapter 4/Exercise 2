@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main (void)
+{
+	char first[10];
+
+	printf("Enter your first name: ");
+	scanf("%s", first);
+	printf("\"%s\"\n", first);
+	printf("\"%20s\"\n", first);
+	printf("\"%-20s\"\n", first);
+	printf("\"%-7s\"\n", first);
+
+	return 0;
+}
