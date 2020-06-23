@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+double mean(double, double);
+
+int main (void)
+{
+	double i, j;
+	
+	printf("Please enter two numbers: ");
+	while(scanf("%lf %lf", &i, &j) ==2)
+	{
+		printf("The harmonic mean of %lf and %lf is %lf\n", i, j, mean(i, j));
+		printf("Enter next two numbers (q to quit):\n");
+	}
+
+	return 0;
+}
+
+double mean(double i, double j)
+{
+	return 1 / ((1 / i + 1 / j) / 2);
+}
