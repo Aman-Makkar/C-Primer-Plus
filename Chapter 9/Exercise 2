@@ -1,0 +1,26 @@
+#include <stdio.h>
+void chline(char ch, int i, int j);
+
+int main (void)
+{
+	char ch;
+	int i, j;
+
+	printf("Please enter ch, i, j: \n");
+	ch = getchar();
+	scanf("%d %d", &i, &j);
+	chline(ch, i, j);
+
+	return 0;
+}
+
+void chline(char ch, int i, int j)
+{
+	int count;
+
+	for (count = 0; count <= i; count++)
+		printf(" ");
+
+	for (count = 0; count <= j; count++)
+		printf("%c", ch);
+}
