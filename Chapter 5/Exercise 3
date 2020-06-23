@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main (void)
+{
+	int week,days, rem_days;
+
+	printf("Enter the number of days or 0 to exit: ");
+	scanf("%d", &days);
+
+	while (days > 0)
+	{
+		week = days / 7;
+		rem_days = days % 7;
+		printf("%d days are %d weeks, %d days\n", days, week, rem_days);
+		printf("Print another number, 0 to exit: ");
+		scanf("%d", &days);
+	}
+
+	return 0;
+}
