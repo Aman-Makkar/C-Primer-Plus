@@ -1,0 +1,18 @@
+#include <stdio.h>
+int main (void)
+{
+	const int lottery_win = 1000000;
+	int withdrawal = 100000;
+	const float rate = 0.08/lottery_win;
+	float available_amount = 1000000;
+	int years = 0;
+
+	while (available_amount > 0)
+	{
+		available_amount += (lottery_win * rate) -  withdrawal;
+		years++;
+	}
+	printf("It would take %d years for Chuckie to be broke!\n", years);
+
+	return 0;
+}
