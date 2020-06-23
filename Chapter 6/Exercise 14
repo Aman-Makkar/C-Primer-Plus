@@ -1,0 +1,27 @@
+#include <stdio.h>
+#define SIZE 8
+int main (void)
+{
+	double arr1[SIZE], arr2[SIZE];
+	int count;
+
+	printf("Enter eight integers: ");
+
+	for (count = 0; count < SIZE; count++)
+	{
+		scanf("%lf", &arr1[count]);
+	}
+	arr2[0] = arr1[0];
+	for (count = 0; count < SIZE; count++)
+		arr2[count] = arr1[count] + arr2[count - 1];
+ 
+	for(count = 0; count < SIZE; count++)
+		printf("%8g ", arr1[count]);
+	printf("\n");
+
+	for (count = 0; count < SIZE; count++)
+		printf("%8g ", arr2[count]);
+	printf("\n");
+
+	return 0;
+} 
