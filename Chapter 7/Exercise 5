@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main (void)
+{
+	char ch;
+	int count = 0;
+
+	printf("Please enter '!' and '.': \n");
+
+	while ((ch = getchar()) != '#')
+	{
+		switch(ch)
+		{
+			case '.':
+				printf("!\n");
+				count++;
+				break;
+			case '!':
+				printf("!!\n");
+				count++;
+				break;
+		}		
+
+	}
+
+	printf("The amount of replacements is = %d\n", count);
+
+	return 0;
+}
