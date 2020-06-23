@@ -1,0 +1,18 @@
+#include <stdio.h>
+#define DUNBAR 150
+#define initial 5
+int main (void)
+{
+	int weeks = 1, friends = initial;
+
+	while (friends <= DUNBAR)
+	{
+		friends -= weeks;
+		friends *= 2;
+		printf("weeks friends\n");
+		printf("%5d %7d\n", weeks, friends);
+		weeks++;
+	}
+
+	return 0;
+}
