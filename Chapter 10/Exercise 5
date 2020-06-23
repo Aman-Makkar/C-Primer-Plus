@@ -1,0 +1,28 @@
+#include <stdio.h>
+#define SIZE 10
+void largest(double arr[], double num);
+int main (void)
+{
+	double array[SIZE] = {99, 10, 45, 67, 65, 7, 66, 80, 64, 35};
+
+	largest(array, SIZE);
+
+	return 0;
+}
+
+void largest(double arr[], double num)
+{
+	double large = arr[0];
+	double small = arr[0];
+	int i;
+
+	for (i = 0; i < num; i++)
+	{
+		if (arr[i] > large)
+			large = arr[i];
+		else if
+			(arr[i] < small)
+			small = arr[i];
+	}
+	printf("The difference between the largest and the smallest number is %.2f\n", large - small);
+}
