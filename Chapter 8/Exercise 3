@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <ctype.h>
+int main (void)
+{
+	int upper = 0;
+	int lower = 0;
+	int other = 0;
+	char ch;
+
+	while (( ch = getchar()) != EOF)
+	{
+		if (isupper(ch))
+			upper++;
+		else if (islower(ch))
+				lower++;
+		else
+			other++;
+	}
+
+	printf("Upper = %d\n", upper);
+	printf("Lower = %d\n", lower);
+	printf("Other = %d\n", other);
+
+	return 0;
+}
