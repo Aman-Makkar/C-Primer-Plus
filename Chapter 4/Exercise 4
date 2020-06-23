@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void)
+{
+	float centimeters, meters;
+	char name[10];
+	
+	printf("Please enter your height in centimeters:\n");
+	scanf("%f", &centimeters);
+	printf("Please enter your name:\n");
+	scanf("%s", &name);
+	
+	meters = centimeters / 100;
+	printf("%s, you are %.2f meters tall.\n", name, meters);
+	
+	return 0;
+}
