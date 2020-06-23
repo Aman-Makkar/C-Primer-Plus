@@ -1,0 +1,28 @@
+#include <stdio.h>
+void function(char ch, int row, int column);
+
+int main (void)
+{
+	char ch;
+	int row, column;
+
+	printf("Please enter ch, i, j: \n");
+	ch = getchar();
+	scanf("%d %d", &column, &row);
+	function(ch, column, row);
+
+	return 0;
+}
+
+void function(char ch, int column, int row)
+{
+	int c, r;
+
+	for (r = 0; r < row; r++)
+	{
+		for (c = 0; c< column; c++)
+			printf("%c", ch);
+		printf("\n");
+	}
+
+}
