@@ -1,0 +1,47 @@
+#include <stdio.h>
+#define tax_tier1 0.15
+#define tax_tier2 0.28
+int main (void)
+{
+	char choice;
+	float single = 0.0;
+	float head = 0.0;
+	float married = 0.0;
+	float separated = 0.0;
+	float income = 0.0;
+
+	printf("Which tax category are you in (s for single, h for head of household, m for married and j for separated: \n");
+	scanf("%c", choice);
+	printf("What is your taxable income: \n");
+	scanf("%f", &income);
+
+	while (1)
+	{
+		switch(choice)
+		{
+			case 's':
+			{
+				single = 0.15 * 17850 + 0.28 * (income - 17850);
+				printf("Your tax is $%f\n", single);
+				break;
+			}
+			case 'h':
+			{
+				head = 0.15 * 23900 + 0.28 * (income - 23900);
+				printf("Your tax is $%f\n", head);
+				break;
+			}
+			case 'm':
+			{
+				married = 0.15 * 29750 + 0.28 * (income - 29750);
+				printf("Your tax is $%f\n", married);
+				break;
+			}
+			case 'j':
+			{
+				separated = 0.15 * 14875 + 0.28 * (income - 14875);
+				printf("Your tax is $%f\n", separated);
+				break;
+			}
+		}
+	}
