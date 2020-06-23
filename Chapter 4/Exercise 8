@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define LITRES 3.785
+#define KM 1.609
+
+int main (void)
+{
+	float miles_traveled;
+	float gasoline_consumed;	
+
+	printf("How many miles did you travel: ");
+	scanf("%f", &miles_traveled);
+	printf("How many gallons of gasoline was consumed: ");
+	scanf("%f", &gasoline_consumed);
+	
+	float mpg = miles_traveled/gasoline_consumed;
+	printf("The value of miles-per-gallon is %.1f.\n", mpg);
+
+	float litres_per_100_km = 100. / mpg * LITRES / KM;
+
+	printf("litres per 100 km = %.1f\n", litres_per_100_km);
+
+	return 0;
+}
