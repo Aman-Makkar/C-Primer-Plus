@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main (void)
+{
+	int new_line = 0;
+	int spaces = 0;
+	int other = 0;
+	char ch;
+
+	printf("Enter a statement: ");
+
+	while ((ch = getchar()) != '#')
+	{
+		if (ch == ' ')
+			spaces++;
+		else if (ch == '\n')
+			new_line++;
+		else
+			other++;
+	}
+
+	printf("Spaces = %d, New line = %d and other characters = %d\n", spaces, new_line, other);
+	printf("Goodbye!\n");
+
+	return 0;
+}
