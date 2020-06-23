@@ -1,0 +1,21 @@
+#include <stdio.h>
+#define CONSTANT 60
+int main(void)
+{
+	int minutes, hours, rem_mins;
+
+	printf("How many minutes do you want to convert to hours: ");
+	scanf("%d", &minutes);
+	
+
+	while (minutes > 0)
+	{
+		hours = minutes/CONSTANT;	
+		rem_mins = (minutes % CONSTANT);
+		printf("%d minutes = %d hours and %d minutes\n", minutes, hours, rem_mins);
+		printf("Please enter another time (<=0 to quit):\n");
+		scanf("%d", &minutes);
+	}
+
+	return 0;
+}
