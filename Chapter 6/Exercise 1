@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define SIZE 27
+int main (void)
+{
+	char arr[SIZE];
+	int count;
+
+	for (count = 0; count < SIZE; count++)
+	{
+		arr[count] = 'a' + count;
+		printf("%c\n", arr[count]);
+	}
+
+	return 0;
+}
