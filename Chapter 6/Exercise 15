@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define SIZE 255
+int main (void)
+{
+	char arr[SIZE];
+	int count = 0;
+
+	printf("Enter a line and I will print it in reverse: ");
+
+	do
+	{
+		scanf("%c", &arr[count]);
+		count++;
+	}while (arr[count-2] != '\n');
+
+	while (count >= 2)
+	{
+		printf("%c", arr[count - 2]);
+		count--;
+	}
+	printf("\n");
+	printf("See you next time!\n");
+
+	return 0;
+}
