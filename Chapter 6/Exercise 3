@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define ROWS 6
+int main (void)
+{
+	int row, column;
+
+	for (row = 0; row < ROWS; row++)
+	{
+		for (column = 'F'; column >= 'F' - row; column--)
+			printf("%c", column);
+		printf("\n");
+	}
+
+	return 0;
+}
