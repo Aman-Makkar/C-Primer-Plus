@@ -1,0 +1,15 @@
+#include <stdio.h>
+#define ROWS 5
+int main (void)
+{
+	int row, column;
+
+	for (row = 0; row < ROWS; row++)
+	{
+		for (column = 0; column <= row; column++)
+			printf("$");
+		printf("\n");
+	}
+
+	return 0;
+}
