@@ -1,0 +1,12 @@
+#include <stdio.h>
+int main(void)
+{
+	char first[10];
+	char last[15];
+
+	printf("Enter your first and last name: ");
+	scanf("%s %s", first, last);
+	printf("%s, %s\n", last, first);
+
+	return 0;
+}
