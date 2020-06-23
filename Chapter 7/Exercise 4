@@ -1,0 +1,34 @@
+#include <stdio.h>
+int main (void)
+{
+	char ch;
+	int subs_period = 0;
+	int subs_exc = 0;
+	int sum_period = 0;
+	int sum_exc = 0;
+
+	printf("Enter anything period'.' or '!' and watch the magic.\n");
+
+	while ((ch = getchar()) != '#')
+	{
+		if (ch == '.')
+		{
+			printf("!\n");
+			subs_period++;
+		}
+		else
+		{
+			ch == '!';
+			printf("!!\n");
+			subs_exc++;
+		}
+	}
+
+	sum_period += subs_period;
+	sum_exc += subs_exc;
+
+	printf("The number of period substituations are: %d\n", sum_period);
+	printf("The number of exclamation mark substitutions are: %d\n", sum_exc);
+
+	return 0;
+}
