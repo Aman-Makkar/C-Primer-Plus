@@ -1,0 +1,25 @@
+#include <stdio.h>
+#define SIZE 8
+int main (void)
+{
+	int arr[SIZE], count;
+
+	printf("Enter eight integers: ");
+
+	/*for (count = 0; count < SIZE; count++)
+	{
+		scanf("%d", &arr[count]);
+		printf("%d\n", arr[count] * arr[count]);
+	}*/
+
+	count = 0;
+
+	do
+	{
+		scanf("%d", &arr[count]);
+		printf("%d\n", arr[count] * arr[count]);
+		count++;
+	} while(count < SIZE);
+
+	return 0;
+}
