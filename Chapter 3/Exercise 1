@@ -1,0 +1,21 @@
+/*1. Find out what your system does with integer overflow, 
+floating-point overflow, and floating-point underflow by using the experimental approach; 
+that is, write programs having these problems. 
+(You can check the discussion in Chapter 4 of limits.h and float.h to get guidance on the largest and smallest values.)*/
+
+#include <stdio.h>
+
+int main (void)
+{
+	int i = 2147483647;
+	float j, k;
+
+	j = 3.4E38 * 100.0f;
+	k = 0.1234E-10 / 10;
+
+	printf("%d %d %d\n", i, i+1, i+2);
+	printf("%e\n", j);
+	printf("%e\n", k);
+
+	return 0;
+}
