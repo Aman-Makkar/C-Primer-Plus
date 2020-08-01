@@ -1,0 +1,16 @@
+//7. There are 2.54 centimeters to the inch. Write a program that asks you to enter your height in inches
+//and then displays your height in centimeters. Or, if you prefer,
+//ask for the height in centimeters and convert that to inches.
+
+#include <stdio.h>
+
+int main (void)
+{
+	float inch;
+
+	printf("Enter your height in inches: ");
+	scanf("%f", &inch);
+	printf("%.2f inches is %.2f cm.\n", inch, inch * 2.54);
+
+	return 0;
+}
