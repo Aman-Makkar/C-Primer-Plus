@@ -1,0 +1,26 @@
+/*In the U.S. system of volume measurements, a pint is 2 cups, a cup is 8 ounces, an ounce is 2
+tablespoons, and a tablespoon is 3 teaspoons. Write a program that requests a volume in cups and that
+displays the equivalent volumes in pints, ounces, tablespoons, and teaspoons. Why does a floating-
+point type make more sense for this application than an integer type?*/
+
+#include <stdio.h>
+
+int main (void)
+{
+	float cups;
+
+	printf("Enter a volume of water in cups: ");
+	scanf("%f", &cups);
+
+	float pint = 2.00 * cups;
+	float ounces = cups * 8.00;
+	float tablespoon = 2.00 * ounces;
+	float teaspoon = 3.00 * tablespoon;
+
+	printf("a %.2f cups is %.2f in pints\n", cups, pint);
+	printf("a %.2f cups is %.2f in ounces\n", cups, ounces);
+	printf("a %.2f cups is %.2f in tablespoons\n", cups, tablespoon);
+	printf("a %.2f cups is %.2f in teaspoons\n", cups, teaspoon);
+
+	return 0;
+}
